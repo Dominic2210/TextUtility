@@ -37,7 +37,6 @@ else{
  }
 }
 
-
   return (
     <>
         <Navbar title = 'Text Converter' tabOne = 'Home' tabTwo = 'About Us' mode = {mode} toggle = {toggleMode}/>
