@@ -36,10 +36,10 @@ export default function FormTemp(props) {
     //     var spellText = document.getElementById("textbox");
     //     spellText.spellcheck();
     //     if (spellText.spellcheck === true) {
-    //         console.log("Spelling is correct")
+    //         props.showAlert("Spelling is correct", "success")
     //     }
     //     else{
-    //         console.log("Incorrect spelling")
+    //         props.showAlert("Incorrect spelling")
     //     }
 
     // }
@@ -54,9 +54,9 @@ export default function FormTemp(props) {
                     <textarea className="form-control" style={{backgroundColor:props.mode === 'dark'?'grey':'white', color:props.mode === 'dark'?'white':'black'}} value={text} onChange={handleOnChange} id="textbox" rows="8"/>
                 </div>
                 <button className="btn btn-primary" onClick={handleUpClick} >UPPERCASE</button>
-                <button className="btn btn-secondary mx-2" onClick={handleLoClick}>lowercase</button>
-                <button className="btn btn-secondary" onClick={handleCopy}>Copy Text</button>
-                <button className="btn btn-secondary mx-2" onClick={handleClear}>Clear Text</button>
+                <button className="btn btn-success mx-2" onClick={handleLoClick}>lowercase</button>
+                <button className="btn btn-danger" onClick={handleCopy}>Copy Text</button>
+                <button className="btn btn-warning mx-2" onClick={handleClear}>Clear Text</button>
                 {/* <button className="btn btn-secondary mx-2" onClick={handleSpell}>Spellcheck</button> */}
 
             </div>

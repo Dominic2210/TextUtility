@@ -14,7 +14,6 @@ import FormTemp from './Components/FormTemp';
 
 
 function App() {
-
   const [alert, setAlert] = useState(null);
 
 const showAlert = (message, type)=>{
@@ -42,21 +41,20 @@ else{
 
  }
 }
-  
   return (
     <>
     {/* <Routes>
-      <Route exact path='/' element={<Home/>}/>
-      <Route exact path='/about' element={<About/>}/>
-    </Routes>
-     */}
-      <Navbar title = 'Text Converter' tabOne = 'Home' tabTwo = 'About Us' mode = {mode} toggle = {toggleMode}/>
-        <Alerts alert = {alert}/>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/about' element={<About/>}/>
+    </Routes> */}
+    
+      <Navbar title = "Text Converter" tabOne = "Home" tabTwo = "About Us" mode = {mode} toggle = {toggleMode}/>
+      <Alerts alert = {alert}/>
         <div className="container my-5">
         <FormTemp showAlert=  {showAlert} heading = "WELCOME TO THE TEXT ARENA" text_a = "Please enter text below: " mode = {mode}/>
       </div>
+
     </>
   );
 }
-
 export default App;
